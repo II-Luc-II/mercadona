@@ -1,0 +1,101 @@
+.container-fluid {
+    height: 200px;
+    background: url("photos/background2.jpg");
+    box-shadow: 0px 3px 0px #691e1e;
+    color: #ffdef6;
+    text-align: center;
+    font-size: 15px;
+    padding-top: initial
+}
+
+.container {
+    background: url("photos/background.jpg");
+    height: 4%;
+    box-shadow: 3px 3px 3px rgba(21, 41, 58, 0.47);
+    border-radius: 50%;
+
+}
+
+.liste-choices {
+    font-size: 15px;
+    border-radius: 30%;
+    position: absolute;
+}
+
+.my-custom-scrollbar {
+    position: relative;
+    height: 600px;
+    overflow: auto;
+    display: none;
+    color: #020e18;
+}
+
+.table-wrapper-scroll-y {
+    display: block;
+}
+
+.tableau {
+    margin-left: 22%;
+    margin-top: 10%;
+}
+
+.btn-group {
+    width: 200px ;
+    position: center;
+}
+
+h1 {
+    margin-top: 4% ;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.border{
+    width: 150px;
+    border-radius: 10%;
+    box-shadow: 3px 3px 3px rgba(21, 41, 58, 0.47);
+}
+.promo-price {
+    color: red;
+    font-weight: bold;
+}
+
+.image {
+    padding-right: 10%;
+}
+
+.breadcrumb{
+    background-color: #801212;
+    box-shadow: 4px 4px 4px #3d1919;
+}
+
+.img-responsive .centre {
+    margin: 0 auto;
+}
+
+h3 {
+    margin-top: 3% ;
+    text-align: center;
+    font-size: 2rem;
+}
+
+h1, h2, h3, h5 {
+    text-transform: capitalize;
+    text-shadow: -1px -1px 1px #aaa,
+                 0px 2px 1px rgba(0,0,0,0.5),
+                 2px 2px 2px rgba(0,0,0,0.7),
+                 0px 0px 3px rgba(0,0,0,0.4);
+}
+a {
+    color: #020e18;
+    font-weight: bold;
+    text-decoration:none;
+}
+
+td, th {
+  word-wrap: break-word;
+}
+
+.large-column {
+  width: 400px; /* Ajustez la valeur en fonction de vos besoins */
+}

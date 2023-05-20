@@ -1,1 +1,1 @@
-web: gunicorn mercadona_back_end/wsgi.py
+web: python manage.py runserver 0.0.0.0

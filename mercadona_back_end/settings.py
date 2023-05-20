@@ -33,7 +33,7 @@ SECRET_KEY = env("MY_SECRET_KEY"),
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mercadona1.herokuapp.com']
 
 
 # Application definition

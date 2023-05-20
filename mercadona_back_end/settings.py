@@ -59,6 +59,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+CSRF_TRUSTED_ORIGINS = ['https://mercadona1.herokuapp.com']
+
 ROOT_URLCONF = 'mercadona_back_end.urls'
 
 TEMPLATES = [
@@ -84,16 +86,16 @@ WSGI_APPLICATION = 'mercadona_back_end.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# DATABASES = {
-#   'default': {
-#        'ENGINE': 'django.db.backends.postgresql',
-#        'NAME': env('DB_NAME'),
-#        'USER': env('DB_USER'),
-#        'PASSWORD': env('DB_PASSWORD'),
-#        'HOST': env('DB_HOST'),
-#        'PORT': env('DB_PORT')
-#    }
-#}
+DATABASES = {
+   'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': env('DB_NAME'),
+        'USER': env('DB_USER'),
+        'PASSWORD': env('DB_PASSWORD'),
+        'HOST': env('DB_HOST'),
+        'PORT': env('DB_PORT')
+    }
+}
 
 DATABASES = {}
 DATABASES['default'] = dj_database_url.config(conn_max_age=600)

@@ -3,5 +3,5 @@ psycopg2==2.9.6
 django-filter==23.2
 Pillow==9.5.0
 pandas==2.0.1
-environ==1.0
+django-environ
 gunicorn==20.1.0

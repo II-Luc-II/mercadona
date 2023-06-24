@@ -104,12 +104,15 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.env/
 
 # mkdocs documentation
 /site
 
 # mypy
 .mypy_cache/
+
+__pycache__/
 
 # Sublime Text #
 *.tmlanguage.cache

@@ -1,8 +1,4 @@
-
-
 from django.db import models
-from datetime import datetime
-
 from django.utils import timezone
 
 
@@ -26,10 +22,10 @@ class Catalogue(models.Model):
 
 
 class Promo(models.Model):
-
+    produits = models.CharField(max_length=60, blank=True, verbose_name="PRODUITS")
     promo_prix = models.DecimalField(max_digits=8, decimal_places=2, null=True, blank=True, verbose_name="PRIX €")
     promo_date_on = models.DateTimeField(default=timezone.now, null=True, blank=True, verbose_name="DATE DEBUT")
-    promo_date_end = models.DateTimeField(default=timezone.now,null=True, blank=True, verbose_name="DATE FIN")
+    promo_date_end = models.DateTimeField(default=timezone.now, null=True, blank=True, verbose_name="DATE FIN")
     promo_remise = models.DecimalField(max_digits=8, decimal_places=0, null=True, blank=True,
                                        verbose_name="Promotions %")
 
@@ -51,3 +47,4 @@ class Categories(models.Model):
 
     def __str__(self):
         return f"{self.categories}"
+

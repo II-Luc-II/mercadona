@@ -1,3 +1,5 @@
+from django.test import TestCase
+
 from time import timezone
 
 from django.test import TestCase
@@ -51,6 +53,7 @@ class CatalogueTestCase(TestCase):
         nbr_of_catalogues_after_add = Catalogue.objects.count()
 
         self.assertTrue(nbr_of_catalogues_after_add == nbr_of_catalogues_before_add + 1)
+
 
 
 
